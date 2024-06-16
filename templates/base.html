@@ -6,6 +6,23 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
     </head>
     <body>
+      
+        <header>
+          <div id="logo">
+            <img src="{{ url_for('static', filename='images/mascot.svg')}}" alt="Image of DiscoBot mascot" id="mascot"><br>
+            <h1>DISCOBOT</h1>
+          </div>  
+              {% if not url_for(request.endpoint) == '/' %}
+                 <nav>
+                    <ul>
+                      <li><a href="">Discobot</a></li>  
+                      <li><a href="">Profile</a></li>  
+                      <li><a href="">Your music</a></li>  
+                      <li><a href="">Log out</a></li>  
+                    </ul>
+                 </nav>
+           {% endif %}
+        </header>   
         {% block content %}{% endblock %}
         <script src="{{ url_for('static', filename='js/main.js')}}"></script>
     </body>
