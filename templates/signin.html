@@ -1,4 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<div id="signin">
+    <h1>Sign in</h1>
+    <form method="post">
+      <input type="text" name="username" placeholder="Username" class="txtFld" required><br>
+      <input type="email" name="email" placeholder="E-mail" class="txtFld" required><br>
+      <input type="button" id="signin-button" value="Sign in"><br>
+      <input type="button" id="signup-button" value="Sign up">
+    </form>
+</div>
 {% endblock %}
