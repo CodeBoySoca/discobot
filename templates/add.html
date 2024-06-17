@@ -1,4 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<div id="track-card">
+  <h1>Add track</h1>
+  <form method="post">
+     <input type="text" name="artist" placeholder="Artist" class="txtFld" required><br>
+     <input type="text" name="title" placeholder="Title" class="txtFld" required><br>
+     <input type="text" name="album" placeholder="Album" class="txtFld" required><br>
+     <input type="text" name="playlist" placeholder="Playlist name" class="txtFld" required><br>
+     <input type="text" name="genre" placeholder="Genre" class="txtFld" required><br>
+     <input type="button" id="save-track-button" value="Save track">
+  </form>
+</div>
 {% endblock %}

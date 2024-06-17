@@ -26,7 +26,7 @@ def playlist():
 
 @app.route('/add/music')
 def add_music():
-    pass
+    return render_template('add.html')
 
 if __name__ == '__main__':
     app.run(port=5555)
